@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import React, { useState, useContext } from 'react';
+import { Pressable, StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { AuthContext } from '../../contexts/authContext';
+
+// Pressable vs TouchableOpacity
 
 export default function SignIn(){
+    const { user } = useContext(AuthContext)
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -21,6 +25,8 @@ export default function SignIn(){
                 style={styles.logo}
                 source={require('../../assets/logo.png')}
             />
+            {/* <Text style={styles.white}> {user?.email } </Text> */}
+
             <View style={styles.InputContainer}>
                 <TextInput
                     style={styles.input} 
@@ -85,5 +91,10 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: '#1d1d2e',
         fontWeight: 'bold',
+    },
+    white: {
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: 'bold'
     }   
 })

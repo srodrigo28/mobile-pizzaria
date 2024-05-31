@@ -39,3 +39,18 @@ npx expo install react-native-screens react-native-safe-area-context
 ```
 npm install @react-navigation/stack
 ```
+
+#### Storage
+npm sem expo
+expo cli
+```
+npx expo install @react-native-async-storage/async-storage
+```
+
+####  Pressable vs TouchableOpacity
+
+#### melhores momentos
+* Contextos
+```
+https://www.udemy.com/course/dev-fullstack/learn/lecture/31684186#overview
+```
