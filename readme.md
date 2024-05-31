@@ -2,7 +2,7 @@
 
 #### Ultimo video visto referencia
 ```
-https://www.udemy.com/course/dev-fullstack/learn/lecture/31684170#overview
+https://www.udemy.com/course/dev-fullstack/learn/lecture/31684174#overview
 ```
 
 #### Criando projeto
